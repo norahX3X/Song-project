@@ -17,6 +17,16 @@ ActiveRecord::Schema.define(version: 2019_04_17_111329) do
     t.string "link"
     t.integer "artist_id"
     t.integer "album_id"
+
+
+
+  create_table "albums", force: :cascade do |t|
+    t.string "name"
+    t.string "image"
+    t.integer "Artist_id"
+
+  create_table "artists", force: :cascade do |t|
+    t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
