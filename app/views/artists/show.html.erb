@@ -1,10 +1,11 @@
-<%= @artist.name %><br>
-<img src="<%= @artist.image %>"/><br>
-<%= @artist.dob %>
+
+<div class="card">
+  <div class="card-body">
+    <h4 class="card-title">Artist: <%= @artist.name %><br></h4>
+    <p class="card-text">Albums: <%#= @artist.albums_name %></p>
+    <a href="#" class="card-link"><%= link_to 'Edit', edit_artist_path %> </a>
+    <a href="#" class="card-link"><%= link_to 'Delete', artist_path(@artist), method: :delete %></a>
+  </div>
+</div>
 
 
-
-
-<p><%= link_to 'Edit', edit_artist_path %> 
-<%= link_to 'Delete', artist_path(@artist), method: :delete %>
-</p>
