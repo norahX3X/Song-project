@@ -1,2 +1,11 @@
-<h1>Albums#show</h1>
-<p>Find me in app/views/albums/show.html.erb</p>
+<h1><%= @album.name %></h1>
+<img src="<%=@album.image%>" alt="">
+
+
+
+
+<p>
+<%= link_to 'edit', edit_album_path(@album) %>
+</p>
+
+
