@@ -1,2 +1,10 @@
-<h1>Artists#show</h1>
-<p>Find me in app/views/artists/show.html.erb</p>
+<%= @artist.name %><br>
+<img src="<%= @artist.image %>"/><br>
+<%= @artist.dob %>
+
+
+
+
+<p><%= link_to 'Edit', edit_artist_path %> 
+<%= link_to 'Delete', artist_path(@artist), method: :delete %>
+</p>
