@@ -1,0 +1,5 @@
+<%= aorm_for @Artist  do |a| %>
+  <%= a.label :name %>
+  <%= a.text_field :name %>
+  <%= a.submit "Create" %>
+<% end %>

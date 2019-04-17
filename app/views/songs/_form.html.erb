@@ -1,0 +1,11 @@
+<%= aorm_for @song  do |a| %>
+  <%= a.label :name %>
+  <%= a.text_field :name %>
+  <%= a.label :link %>
+  <%= a.text_field :link %>
+  <%= a.label :artist_id %>
+  <%= a.collection_select :artist_id, Artist.all, :id, :name %>
+  <%= a.label :album_id %>
+  <%= a.collection_select :album_id, Artist.all, :id, :name %>
+  <%= a.submit "Create" %>
+<% end %>

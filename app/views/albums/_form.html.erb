@@ -1,0 +1,9 @@
+<%= aorm_for @album  do |a| %>
+  <%= a.label :name %>
+  <%= a.text_field :name %>
+  <%= a.label :image %>
+  <%= a.text_field :image %>
+  <%= a.label :Artist_id %>
+  <%= a.collection_select :Artist_id, Artist.all, :id, :name %>
+  <%= a.submit "Create" %>
+<% end %>
