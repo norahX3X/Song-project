@@ -10,6 +10,13 @@
   </head>
 
   <body>
+   <nav>
+    <%= link_to 'Artist', songs_path %>
+    <%= link_to 'Albums', albums_path %>
+    <%= link_to 'Songs', artist_path %>
+
+    </nav>
     <%= yield %>
+   
   </body>
 </html>
