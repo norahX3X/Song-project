@@ -3,6 +3,7 @@
 <% @songs.each do |song| %>
 <li>
 <%= song.name %>
+<%= song.album.name %>
 <audio controls>
     <source src=<%= song.link %> type="audio/mpeg">
   Your browser does not support the audio element.
